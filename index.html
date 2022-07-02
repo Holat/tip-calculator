@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.svg" alt="">
+    </div>
+    <div class="tip-calculator">
+      <div class="calculator">
+        <div class="bill">
+          <label for="bill-input">Bill</label>
+          <input type="number" class="input" id="bill-input" placeholder="0">
+        </div>
+        <div class="tips">
+          <label>Select Tip %</label>
+          <div class="tip-container">
+            <button value="5" class="tip">5%</button>
+            <button value="10" class="tip">10%</button>
+            <button value="15" class="tip strong-cyan">15%</button>
+            <button value="25" class="tip">25%</button>
+            <button value="50" class="tip">50%</button>
+            <input type="number"  id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="people">
+          <label for="number_of_people">Number of People <span display="none">Can't be Zero</span></label>
+          <input type="number" class="input" id="number_of_people" placeholder="0">
+        </div>
+      </div>
+      <div class="results">
+        <div>
+          <div class="amount-container result">
+          <div class="tip-amount">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="a12qwe">$<span class="amount">0.00</span></div>
+        </div>
+        <div class="total-container result">
+          <div class="tip-amount">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="a12qwe">$<span class="total">0.00</span></div>
+        </div>
+      </div>
+        <button id="reset" class="strong-cyan">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
